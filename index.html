@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawmill Custom Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Bhagirathi Sawmill!</h1>
+        <p>Order custom-cut wood by dimensions</p>
+    </header>
+
+    <section id="order-form">
+        <h2>Order Form</h2>
+        <form id="orderForm">
+            <label for="length">Length (in inches):</label>
+            <input type="number" id="length" name="length" required>
+
+            <label for="width">Width (in inches):</label>
+            <input type="number" id="width" name="width" required>
+
+            <label for="thickness">Thickness (in inches):</label>
+            <input type="number" id="thickness" name="thickness" required>
+
+            <label for="quantity">Quantity (pieces):</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <button type="button" onclick="calculatePrice()">Calculate Price</button>
+        </form>
+
+        <div id="result" style="display:none;">
+            <h3>Order Summary</h3>
+            <p id="totalPrice"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact Us: bhagirathiswamill@gmail.com | Call us: 7588536228 / 9881452652</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
